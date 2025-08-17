@@ -42,4 +42,12 @@ function handelDelete(id) {
     renderToDO();
 }
 
+// Handels enter key
+input.addEventListener("keydown", function(event) {
+    if(event.key === "Enter") {
+        console.log("Enter key pressed!");
+        handelToDO();
+    }
+});
+
 btn.addEventListener("click", handelToDO);
